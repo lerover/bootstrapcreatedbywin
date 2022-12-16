@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="creating.css" rel="stylesheet">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<!-- form -->
+	<form>
+		<input type="text" name="username" id="username" class="username" placeholder="Enter Your Username" required>
+
+		<div style="display: flex; flex-direction:column; ">
+			<input type="password" name="password" id="password" class="password" minlength="10"
+				placeholder="Enter Your Password" required style="margin-bottom:5px" required>
+			<small>*Your Password must be 10 letters at least</small>
+		</div>
+		<select name="gender" id="gender" class="gender">
+			<option disabled selected>Gender</option>
+			<option name="m">Male</option>
+			<option name="f">Female</option>
+			<option name="o">Other</option>
+		</select>
+
+		<div style="display: flex; flex-direction:column; ">
+			<input type="number" name="age" id="age" class="age" min="18" max="30" placeholder="Age"
+				style="margin-bottom: 5px;" required>
+			<small>*You must be between 18 and 30.</small>
+		</div>
+
+		<div style="width:210px ;height: 60px; text-align: center; margin: 0 auto;">
+			<input type="submit" name="submit" id="submit" class="login" value="SUBMIT">
+		</div>
+	</form>
+	<!-- form -->
+
+	<!-- login -->
+	<section class="loginsection">
+		<form action="" method="">
+			<article class="login-article">
+				<div class="profile-div">
+					<div class="profile">
+						<i class="fa-solid fa-user"></i>
+					</div>
+					<h1>LOGIN</h1>
+				</div>
+
+				<div class="input-div">
+
+					<div class="input">
+						<input type="email" name="email" id="email" placeholder="Enter Email" required>
+						<input type="password" name="password" id="password" class="password" minlength="10"
+							placeholder="Enter Password" required style="margin-bottom:5px" required>
+					</div>
+					<div class="input-submit-button">
+						<input type="submit" name="submit" id="submit" class="login" value="Login">
+					</div>
+				</div>
+
+			</article>
+		</form>
+	</section>
+<!-- login -->
+
+
+</body>
+
+</html>
